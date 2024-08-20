@@ -1,0 +1,103 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+
+/* Standards */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/weather.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav,main{
+    background: rgba( 11, 84, 169, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.5px );
+-webkit-backdrop-filter: blur( 0.5px );
+border-radius: 10px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+nav a h1{
+    color: #fff;
+}
+main{
+    color: #fff;
+    
+}
+.search-icon {
+  transition: background-color 0.3s;
+  cursor: pointer;
+  will-change: contents;
+}
+.toggle-temperature-unit{
+  transition: background-color 0.3s;
+  cursor: pointer;
+  will-change: contents;
+  color: #fff;
+}
+.search-icon:hover,
+.toggle-temperature-unit:hover {
+  background: midnightblue;
+  color: #fff;
+}
+.dataset-1,
+.dataset-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.dataset-1 > div,
+.dataset-2 > div,
+.dataset-3 > div {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.dataset-1 i {
+  font-size: 2.5rem;
+}
+
+.dataset-2 > div {
+  gap: 0.25rem;
+}
+
+.dataset-2 .temperature-and-icon {
+  gap: 0.75rem;
+}
+
+.dataset-3 > div {
+  flex-grow: 1;
+}
+
+.dataset-3 i {
+  font-size: 3rem;
+}
+
+hr {
+  width: 80%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
